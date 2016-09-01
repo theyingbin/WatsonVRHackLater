@@ -98,7 +98,6 @@
     <Compile Include="Assets\EnfluxVR\Scripts\UIScripts\Container_Devices.cs" />
     <Compile Include="Assets\EnfluxVR\Scripts\UIScripts\Dropdown_COM.cs" />
     <Compile Include="Assets\EnfluxVR\Scripts\UIScripts\calibrationOnClick.cs" />
-    <Compile Include="Assets\Flying_Object.cs" />
     <Compile Include="Assets\GameLogic.cs" />
     <Compile Include="Assets\OVR\Moonlight\Scripts\OVRDebugHeadController.cs" />
     <Compile Include="Assets\OVR\Moonlight\Scripts\OVROverlay.cs" />
@@ -129,11 +128,13 @@
     <Compile Include="Assets\ScreenshotCam1.cs" />
     <Compile Include="Assets\ScreenshotCam2.cs" />
     <Compile Include="Assets\Screenshotter.cs" />
+    <Compile Include="Assets\Scripts\Flying_Object.cs" />
     <Compile Include="Assets\Scripts\GetClassifiers.cs" />
     <Compile Include="Assets\Scripts\MasterTiming.cs" />
     <Compile Include="Assets\Scripts\Menu_Button.cs" />
     <Compile Include="Assets\Scripts\PoseAudioSync.cs" />
     <Compile Include="Assets\Scripts\PoseStruct.cs" />
+    <Compile Include="Assets\Scripts\SpriteLimbs.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
