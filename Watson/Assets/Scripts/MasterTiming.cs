@@ -13,14 +13,9 @@ public class MasterTiming : MonoBehaviour
 
     PoseStruct.Pose[] poses;
 
-    public Sprite cueY;
-    public Sprite cueM;
-    public Sprite cueC;
-    public Sprite cueA;
+    private string[] resources = { "Prefabs/PoseY", "Prefabs/PoseM", "Prefabs/PoseC", "Prefabs/PoseA"};
 
     private bool ready = true;
-
-    private Sprite[] cues;
 
     // Use this for initialization
     void Start()
@@ -28,17 +23,16 @@ public class MasterTiming : MonoBehaviour
 
         //audioSource = GameObject.Find("AudioMainSource").GetComponent<AudioSource>();
 
-        cues = new Sprite[] { cueY, cueM, cueC, cueA };
 
         poses = PoseStruct.poses;
 
         for (int i = 0; i < 4; i++)
         {
             GameObject instance =
-                Instantiate(Resources.Load("Prefabs/PosesObject", typeof(GameObject))) as GameObject;
+                Instantiate(Resources.Load(resources[i], typeof(GameObject))) as GameObject;
             instance.name = "Pose" + i;
             posesToSync[i] = instance.GetComponent<PoseAudioSync>();
-            posesToSync[i].setResources(cues[i]);
+            posesToSync[i].setResources();
         }
     }
 

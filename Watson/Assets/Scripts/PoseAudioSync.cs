@@ -5,7 +5,7 @@ public class PoseAudioSync : MonoBehaviour {
        
     AudioSource audioSource;
     GameObject playerOne;
-    Vector3 initialPosition = new Vector3(0f, 1.5f, 5.51f);
+    Vector3 initialPosition = new Vector3(0f, 1.2f, 5.51f);
     Vector3 distanceOffset = new Vector3(0f, 0f, .5f);
    // float[] groupTimes = new float[]  {45.66f, 49.66f, 60.66f};
     bool isReady = false;
@@ -63,11 +63,10 @@ public class PoseAudioSync : MonoBehaviour {
         Debug.Log("Reset "+this.name);
     }
 
-    public void setResources(Sprite cueSprite)
+    public void setResources()
     {
         audioSource = GameObject.Find("AudioMainSource").GetComponent<AudioSource>();
         playerOne = GameObject.Find("[EnfluxVRHumanoid]");
-        childSprite.sprite = cueSprite;
         reset();       
     }
 
