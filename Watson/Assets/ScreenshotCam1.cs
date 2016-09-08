@@ -10,14 +10,14 @@ public class ScreenshotCam1 : MonoBehaviour {
     public string Folder = "Images";
     // Use this for initialization
     void Start () {
-        takeAshot = screenshotObject.GetComponent<Screenshotter>();
+        //takeAshot = screenshotObject.GetComponent<Screenshotter>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("t"))
-        {
-            StartCoroutine(takeAshot.takeScreenShotAsync(Folder + "/testcam" + Count++));
-        }
+        //if (Input.GetKeyDown("t"))
+        //{
+        //    StartCoroutine(takeAshot.takeScreenShotAsync(Folder + "/testcam" + Count++));
+        //}
     }
 }

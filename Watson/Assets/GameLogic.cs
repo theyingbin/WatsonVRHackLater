@@ -114,7 +114,7 @@ public class GameLogic : MonoBehaviour {
                 captured = true;
                 status.text = " In Pose: " + pose.pose;
                 score.text = "Score: " + Score;
-                StartCoroutine(TakePhotoAndClassify(Folder + poseIndex, pose.pose));
+                // StartCoroutine(TakePhotoAndClassify(Folder + poseIndex, pose.pose));
             }
         }
     }
