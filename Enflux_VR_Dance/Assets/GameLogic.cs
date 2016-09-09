@@ -70,7 +70,7 @@ public class GameLogic : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-        if (poseIndex >= poses.Length)
+        if (poseIndex >= poses.Length/2)
         {
             if (!audioSource.isPlaying)
             {
