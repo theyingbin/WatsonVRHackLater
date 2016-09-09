@@ -72,11 +72,7 @@ public class GameLogic : MonoBehaviour {
 
         if (poseIndex >= poses.Length/2)
         {
-            if (!audioSource.isPlaying)
-            {
-                endGame();
-            }
-            return;
+            endGame();
         }
 
         float t = audioSource.time;

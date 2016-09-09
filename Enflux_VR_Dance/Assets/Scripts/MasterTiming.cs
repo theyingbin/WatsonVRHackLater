@@ -40,7 +40,7 @@ public class MasterTiming : MonoBehaviour
     void Update()
     {
         float t = audioSource.time;
-        if (poseIndex >= poses.Length)
+        if (poseIndex >= poses.Length/2)
         {
             return;
         }
