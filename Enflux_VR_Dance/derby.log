@@ -11,3 +11,6 @@ os.arch=amd64
 os.version=6.1
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Sep 09 14:05:33 PDT 2016:
+Shutting down instance a816c00e-0157-102a-0571-00000e76b248 on database directory C:\Projects\WatsonVRHackLater\Watson\modulesDB with class loader sun.misc.Launcher$AppClassLoader@4e25154f 

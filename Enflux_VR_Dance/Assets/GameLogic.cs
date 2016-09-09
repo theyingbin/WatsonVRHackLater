@@ -119,39 +119,6 @@ public class GameLogic : MonoBehaviour {
         }
     }
 
-    IEnumerator TakePhotoAndClassify(string filename, string expected)
-    {
-        bool hasMatched = false;
-        string[] classifierIDs = { "poses_421181554" };
-        GetComponent<Screenshotter>().takeScreenShot(filename);
-        GetComponent<GetClassifiers>().CheckMatch(filename + ".png", "pose" + expected.ToUpper(), classifierIDs, (wasMatch) => {
-            if (wasMatch && !hasMatched)
-            {
-                hasMatched = true;
-                increaseScore(10);
-            }
-        });
-        yield return new WaitForSeconds(Delay);
-        GetComponent<Screenshotter>().takeScreenShot(filename);
-        GetComponent<GetClassifiers>().CheckMatch(filename + ".png", "pose" + expected.ToUpper(), classifierIDs, (wasMatch) => {
-            if(wasMatch && !hasMatched)
-            {
-                hasMatched = true;
-                increaseScore(10);
-            }
-        });
-        yield return new WaitForSeconds(Delay);
-        GetComponent<Screenshotter>().takeScreenShot(filename);
-        GetComponent<GetClassifiers>().CheckMatch(filename + ".png", "pose" + expected.ToUpper(), classifierIDs, (wasMatch) => {
-            if (wasMatch && !hasMatched)
-            {
-                hasMatched = true;
-                increaseScore(10);
-            }
-        });
-        yield return null;
-    }
-
     public void increaseScore(int amount)
     {
         Score += amount;
