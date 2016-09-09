@@ -6,7 +6,7 @@ public class PoseAudioSync : MonoBehaviour {
     AudioSource audioSource;
     GameObject playerOne;
     Vector3 initialPosition = new Vector3(0f, 1.2f, 5.51f);
-    Vector3 distanceOffset = new Vector3(0f, 0f, .5f);
+    Vector3 distanceOffset = new Vector3(0f, 0f, 0f);
    // float[] groupTimes = new float[]  {45.66f, 49.66f, 60.66f};
     bool isReady = false;
     //float targetTime;
