@@ -64,7 +64,7 @@ public class GameLogic : MonoBehaviour {
     private void endGame()
     {
         Menu.SetActive(true);
-        GameUI.SetActive(false);
+        GameUI.transform.Find("PoseText").gameObject.SetActive(false);
     }
 
     // Update is called once per frame

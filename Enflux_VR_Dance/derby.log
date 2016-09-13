@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Fri Sep 09 16:13:15 PDT 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0157-1139-fb14-00000e7670f8 
+Sat Sep 10 10:36:10 PDT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0157-152b-be3e-00000e76b5b0 
 on database directory C:\Projects\WatsonVRHackLater\Enflux_VR_Dance\modulesDB with class loader sun.misc.Launcher$AppClassLoader@4e25154f 
 Loaded from file:/C:/Projects/WatsonVRHackLater/Enflux_VR_Dance/Assets/Plugins/Sensors/EVRModuleServer.jar
 java.vendor=Oracle Corporation
